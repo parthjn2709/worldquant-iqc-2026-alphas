@@ -4,7 +4,7 @@ This repository contains alpha research and experimentation for WorldQuant IQC 2
 
 ## Contributors
 - Parth Naikwad
-- Vaibhav
+- Vaibhav Sobti
 
 ## Goal
 - Build high-quality alphas
