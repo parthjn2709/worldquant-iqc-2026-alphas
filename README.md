@@ -1,2 +1,32 @@
-# worldquant-iqc-2026-alphas
-Alpha research repository for WorldQuant IQC 2026. Each alpha includes its hypothesis, expression, simulation settings, and performance metrics (Sharpe, Fitness, Turnover,..).  Maintained collaboratively by Parth and Vaibhav, with the goal of building high-quality, low-correlation alphas for competitive submission and quant research development.
+# WorldQuant IQC 2026 Alpha Research
+
+This repository contains alpha research and experimentation for WorldQuant IQC 2026.
+
+## Contributors
+- Parth Naikwad
+- Vaibhav
+
+## Goal
+- Build high-quality alphas
+- Maintain low correlation
+- Achieve high Sharpe and fitness
+- Reach 10,000+ IQC score
+
+## Alpha Categories
+- Price-Volume
+- Fundamental
+- Sentiment
+- Hybrid
+
+## Workflow
+1. Generate idea
+2. Form hypothesis
+3. Build alpha
+4. Simulate in WorldQuant Brain
+5. Store results here
+6. Improve iteratively
+
+## Notes
+- Focus on economic intuition
+- Avoid overfitting
+- Maintain diversity across alphas
