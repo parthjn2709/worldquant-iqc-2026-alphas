@@ -1,0 +1,46 @@
+## Hypothesis
+Implied volatility reflects market expectations of future uncertainty, while Parkinson volatility captures historical realized volatility using high-low price ranges.
+
+When implied volatility (calls) is significantly higher than historical volatility, it suggests that the market expects higher future movement, often associated with bullish sentiment or upcoming events.
+
+Thus, a higher ratio of implied volatility to historical volatility indicates potential upside opportunities.
+
+Using ts_backfill ensures missing data is handled and avoids signal sparsity.
+
+---
+
+## Alpha Expression
+ts_backfill(implied_volatility_call_120 / parkinson_volatility_120, 2)
+
+
+---
+
+## Performance Metrics
+
+- **Sharpe:** 1.39  
+- **Turnover:** 21.52%  
+- **Fitness:** 1.48  
+- **Returns:** 24.52%  
+- **Drawdown:** 21.56%  
+- **Margin:** 22.79‱  
+
+---
+
+## Settings
+
+- **Instrument Type:** Equity  
+- **Region:** USA  
+- **Universe:** TOP200  
+- **Language:** Fast Expression  
+
+- **Decay:** 0  
+- **Delay:** 1  
+- **Truncation:** 0.08  
+- **Neutralization:** Sector  
+
+- **Pasteurization:** On  
+- **NaN Handling:** Off  
+- **Unit Handling:** Verify  
+
+- **Max Trade:** OFF  
+- **Max Position:** OFF  
