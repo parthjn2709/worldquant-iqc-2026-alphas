@@ -1,0 +1,45 @@
+# alpha_01_parth
+
+## Hypothesis
+Analyst expectations (such as EPS estimates) provide forward-looking signals about a company’s future profitability.
+
+A higher `est_eps / close` indicates that the stock is relatively undervalued compared to its expected earnings. By applying a time-series rank (`ts_rank`), we capture persistent strength in earnings expectations over time.
+
+Using `group_rank` with industry neutralization ensures that companies are compared within similar business environments, removing structural biases across industries.
+
+Therefore, stocks with relatively higher expected earnings compared to their price within the same industry are more likely to outperform.
+
+---
+
+## Alpha Expression
+group_rank(ts_rank(est_eps/close, 60), industry)
+
+## Performance Metrics
+
+- **Sharpe:** 1.74  
+- **Turnover:** 23.08%  
+- **Fitness:** 1.07  
+- **Returns:** 8.70%  
+- **Drawdown:** 4.08%  
+- **Margin:** 7.54‱  
+
+---
+
+## Settings
+
+- **Instrument Type:** Equity  
+- **Region:** USA  
+- **Universe:** TOP3000  
+- **Language:** Fast Expression  
+
+- **Decay:** 2  
+- **Delay:** 1  
+- **Truncation:** 0.08  
+- **Neutralization:** Industry  
+
+- **Pasteurization:** On  
+- **NaN Handling:** Off  
+- **Unit Handling:** Verify  
+
+- **Max Trade:** OFF  
+- **Max Position:** OFF  
