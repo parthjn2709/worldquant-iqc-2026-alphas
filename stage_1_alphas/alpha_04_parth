@@ -1,0 +1,45 @@
+## Hypothesis
+Enterprise Value to EBITDA (EV/EBITDA) is a widely used valuation metric that measures how expensive a company is relative to its operating earnings.
+
+Lower EV/EBITDA indicates undervaluation, meaning the company generates higher earnings relative to its valuation.
+
+By applying ts_zscore, we normalize the valuation across time, identifying relative extremes.
+
+Using group_rank within industry ensures fair comparison across similar companies.
+
+Thus, stocks with relatively low EV/EBITDA within their industry are expected to outperform.
+
+---
+
+## Alpha Expression
+group_rank(-ts_zscore(enterprise_value/ebitda, 60), industry)
+
+## Performance Metrics
+
+- **Sharpe:** 1.55  
+- **Turnover:** 10.56%  
+- **Fitness:** 1.24  
+- **Returns:** 7.95%  
+- **Drawdown:** 4.58%  
+- **Margin:** 15.05‱  
+
+---
+
+## Settings
+
+- **Instrument Type:** Equity  
+- **Region:** USA  
+- **Universe:** TOP3000  
+- **Language:** Fast Expression  
+
+- **Decay:** 5  
+- **Delay:** 1  
+- **Truncation:** 0.08  
+- **Neutralization:** Industry  
+
+- **Pasteurization:** On  
+- **NaN Handling:** On  
+- **Unit Handling:** Verify  
+
+- **Max Trade:** OFF  
+- **Max Position:** OFF  
