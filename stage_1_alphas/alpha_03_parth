@@ -1,0 +1,46 @@
+## Hypothesis
+Analyst estimates such as price targets (est_ptp) and free cash flow forecasts (est_fcf) are forward-looking indicators of company performance.
+
+A high positive correlation between these two signals may indicate consensus and already priced-in expectations.
+
+However, a divergence (low or negative correlation) suggests disagreement or mispricing, which creates alpha opportunities.
+
+By taking the negative correlation, we aim to capture situations where valuation signals are inconsistent, indicating potential inefficiencies.
+
+---
+
+## Alpha Expression
+-ts_corr(est_ptp, est_fcf, 20)
+
+
+---
+
+## Performance Metrics
+
+- **Sharpe:** 1.89  
+- **Turnover:** 16.13%  
+- **Fitness:** 1.66  
+- **Returns:** 12.47%  
+- **Drawdown:** 10.88%  
+- **Margin:** 15.46‱  
+
+---
+
+## Settings
+
+- **Instrument Type:** Equity  
+- **Region:** USA  
+- **Universe:** TOP3000  
+- **Language:** Fast Expression  
+
+- **Decay:** 0  
+- **Delay:** 1  
+- **Truncation:** 0.08  
+- **Neutralization:** Market  
+
+- **Pasteurization:** On  
+- **NaN Handling:** Off  
+- **Unit Handling:** Verify  
+
+- **Max Trade:** OFF  
+- **Max Position:** OFF  
