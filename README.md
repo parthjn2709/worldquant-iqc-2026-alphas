@@ -5,6 +5,7 @@ This repository contains alpha research and experimentation for WorldQuant IQC 2
 ## Contributors
 - Parth Naikwad
 - Vaibhav Sobti
+- Aaradhya Singh
 
 ## Goal
 - Build high-quality alphas
@@ -13,10 +14,14 @@ This repository contains alpha research and experimentation for WorldQuant IQC 2
 - Reach 10,000+ IQC score
 
 ## Alpha Categories
+- Analyst
 - Price-Volume
 - Fundamental
 - Sentiment
-- Hybrid
+- Model
+- News
+- Options
+- Social Media
 
 ## Workflow
 1. Generate idea
@@ -29,4 +34,4 @@ This repository contains alpha research and experimentation for WorldQuant IQC 2
 ## Notes
 - Focus on economic intuition
 - Avoid overfitting
-- Maintain diversity across alphas
+- Maintain diversity across alphas even if the IS score is decreasing
