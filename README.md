@@ -9,9 +9,9 @@ This repository contains alpha research and experimentation for WorldQuant IQC 2
 
 ## Goal
 - Build high-quality alphas
-- Maintain low correlation
-- Achieve high Sharpe and fitness
-- Reach 10,000+ IQC score
+- Maintain low correlation as an aim for a better OS score
+- Achieve high Sharpe and fitness 
+- Reach India top 8 till stage 2 concludes
 
 ## Alpha Categories
 - Analyst
