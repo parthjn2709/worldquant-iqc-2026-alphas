@@ -1,0 +1,2 @@
+
+-ts_backfill(zscore(ts_backfill(goodwill,40)/ts_backfill(sales,40)),65)*(rank(ts_backfill(fn_accrued_liab_a,40))*rank(ts_backfill(capex,40))*rank(ts_backfill(dividend/sharesout,40))+rank(ts_backfill(debt_st,40)))

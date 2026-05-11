@@ -1,0 +1,5 @@
+
+R_o = log(open / ts_delay(close, 1)) * 100;
+sent_z = zscore(snt_social_value);
+sent = sign(sent_z) * power(abs(sent_z), 2.5);
+error = ts_regression(R_o, sent, 60) * ts_mean(log(adv20), 63);

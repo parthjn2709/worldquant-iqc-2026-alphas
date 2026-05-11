@@ -1,0 +1,7 @@
+
+rt = fnd6_intc;
+b = ts_mean(rt, 22);
+o = ts_std_dev(rt, 20);
+drt = -(ts_delta(b - rt, 22)/22) + o*ts_delta(sqrt(rt), 8)/8*quantile(returns, driver = gaussian, sigma = 1);
+a = group_backfill(group_rank(drt, industry), market, 350);
+trade_when(volume>0.3*adv20, a, -1

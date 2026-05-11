@@ -1,0 +1,2 @@
+
+ts_decay_linear(group_zscore(-ts_corr(rd_expense/revenue, ts_delay(ts_backfill(sales_growth,63),63),252),industry), 5) * rank(volume*close) + ts_decay_linear(group_zscore(-ts_corr(rd_expense/revenue, ts_delay(ts_backfill(sales_growth,63),63),252),industry), 10) * (1 - rank(volume*close))

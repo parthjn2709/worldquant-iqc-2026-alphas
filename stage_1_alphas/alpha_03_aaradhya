@@ -1,0 +1,4 @@
+
+sent_vol = vec_sum(scl12_alltype_buzzvec);
+
+a = trade_when(rank(sent_vol)>0.94 , (-zscore(-snt_buzz_bfl)*ts_zscore(sent_vol,5)), -1);

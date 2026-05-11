@@ -1,0 +1,20 @@
+
+A = working_capital/assets;
+
+B = retained_earnings/assets;
+
+C = ebitda/assets;
+
+D = equity/liabilities;
+
+E = sales/assets;
+
+S = 1.2*A+1.4*B + 3.3*C + 0.6*D + E;
+
+f = (1+rank(-ts_av_diff(close,5)))ts_sum(volume,20)(1+rank(-pcr_vol_10))*(1+rank(-implied_volatility_put_1080));
+
+h =quantile(implied_volatility_call_1080/implied_volatility_put_1080,driver="uniform");
+
+abc=if_else(S<2,f ,trade_when(S>2.5,h,-1));
+
+group_neutralize(group_rank(abc, exchange),exchange)

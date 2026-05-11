@@ -1,0 +1,2 @@
+
+-ts_std_dev(scl12_buzz,15)*(1+group_rank(ts_zscore(cap,10),market))

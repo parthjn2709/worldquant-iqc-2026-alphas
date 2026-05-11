@@ -1,0 +1,2 @@
+
+ts_decay_linear(rank(group_rank(ts_backfill((implied_volatility_call_180 - implied_volatility_put_180)/implied_volatility_mean_180,180),industry)), 100) * rank(volume*close) + ts_decay_linear(rank(group_rank(ts_backfill((implied_volatility_call_180 - implied_volatility_put_180)/implied_volatility_mean_180,180),industry)), 180) * (1 - rank(volume*close))

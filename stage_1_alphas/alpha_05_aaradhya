@@ -1,0 +1,8 @@
+
+sentiment = ts_delay(ts_backfill(vec_avg(nws18_sse), 60), 1);
+
+vhat = ts_regression(ts_backfill(volume*close, 60), sentiment, 750); 
+
+ehat = -ts_regression(ts_backfill(returns, 60), vhat, 750); 
+
+group_rank(ehat, densify(bucket(rank(cap), range="0.1667,1,0.1667")))

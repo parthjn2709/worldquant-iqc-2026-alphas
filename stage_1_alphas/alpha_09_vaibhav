@@ -1,0 +1,2 @@
+
+group_rank(ts_zscore(operating_income/cap,252),subindustry)

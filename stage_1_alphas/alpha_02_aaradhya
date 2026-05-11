@@ -1,0 +1,6 @@
+
+avg_news = vec_avg(nws12_afterhsz_sl);
+
+alpha=rank(ts_sum(avg_news, 504)) > 0.5 ? 1 : rank(-ts_delta(close, 3));
+
+beta=signed_power(alpha-0.5,5);
