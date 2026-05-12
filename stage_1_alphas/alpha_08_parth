@@ -1,0 +1,2 @@
+group = bucket(rank(cap), range = "0, 1, 0.1667");
+group_neutralize(ts_rank(operating_income / vwap, 200), group)
