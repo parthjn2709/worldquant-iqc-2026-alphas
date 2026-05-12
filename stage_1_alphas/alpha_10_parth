@@ -1,0 +1,9 @@
+a = close / open;
+b = a-1;
+c = close/ts_delay(close, 1);
+d = c/a - 1;
+num = if_else(and(d>0, b<0), 1, 0);
+nr = ts_sum(num, 20)/20;
+ab_nr = nr/ts_mean(nr, 240);
+group = bucket(rank(cap), range = "0.1667, 1, 0.1667");
+0.5*group_rank(-returns, group) + 0.5*group_rank(ab_nr, group)
