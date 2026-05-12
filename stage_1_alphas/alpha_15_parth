@@ -1,0 +1,1 @@
+-ts_backfill(zscore(goodwill/sales),65)*(rank(fn_accrued_liab_a)+rank(ts_backfill(capex, 5)))
