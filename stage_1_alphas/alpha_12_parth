@@ -1,0 +1,9 @@
+a = (ts_rank(fnd6_fopo/debt_lt,252));
+
+group=bucket(rank(cap),range="0.1667,1,0.1667");
+
+b = 1+ts_rank(operating_income-operating_expense,126);
+
+signal=a*(group_rank(b,group));
+
+ts_decay_linear(signal,15)*(rank(volume*close)) + ts_decay_linear(signal,30)*(1-rank(volume*close))
