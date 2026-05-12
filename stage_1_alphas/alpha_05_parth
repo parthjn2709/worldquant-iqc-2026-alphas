@@ -1,0 +1,1 @@
+trade_when(pcr_oi_270 < 1, group_neutralize(ts_decay_linear(implied_volatility_call_270 - implied_volatility_put_270, 6), bucket(rank(historical_volatility_20), range="0, 1, 0.1")), -1)
